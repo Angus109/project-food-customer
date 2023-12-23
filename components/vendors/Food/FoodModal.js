@@ -11,7 +11,7 @@ import React, { useContext, useState } from "react";
 import { AntDesign } from "@expo/vector-icons";
 
 import styles, { primaryColor } from "../../../styles/styles";
-import CustomButton from "../../common/CustomButtom";
+import CustomButton from "../../common/CustomButton";
 import Hr from "../../common/Hr";
 import { auth, createCartItem } from "../../../firebase";
 import UserContext from "../UserContext";

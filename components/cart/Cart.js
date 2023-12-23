@@ -13,7 +13,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useIsFocused } from "@react-navigation/native";
 
 import styles, { secondaryColor, accentColor } from "../../styles/styles";
-import CustomButton from "../common/CustomButtom.js";
+import CustomButton from "../common/CustomButton.js";
 import CartItem from "./CartItem";
 import Hr from "../common/Hr";
 import { addOrders, getCartList } from "../../firebase";

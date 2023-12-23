@@ -6,7 +6,7 @@ import { auth, fbSignUp, fbSignIn } from "../../firebase.js";
 
 import styles from "../../styles/styles.js";
 import Field from "../common/Field.js";
-import CustomButton from "../common/CustomButtom.js";
+import CustomButton from "../common/CustomButton.js";
 import LoadingScreen from "../common/LoadingScreen.js";
 
 const Login = () => {
@@ -22,7 +22,8 @@ const Login = () => {
       
       nav.replace("home");
     } else {
-      // User is signed out
+      nav.navigate("login");
+    
     }
   });
 
@@ -44,7 +45,7 @@ const Login = () => {
     >
       <LoadingScreen visible={loading} />
       <View style={loginStyle.loginContainer}>
-        <Text style={styles.title}>Student Login</Text>
+        <Text style={styles.title}>customer Login</Text>
         <Field
           label={"Username"}
           value={email}
